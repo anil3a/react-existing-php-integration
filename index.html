@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>React integration into existing PHP project with Search Feature</title>
+	<!--  Include CSS  	 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--  Include Jquery -->
+</head>
+<body >
+	
+	<h1>React integration into Existing PHP Project.</h1>
+
+<style type="text/css">
+	body {
+		padding: 4%;
+	}
+	table, tbody {
+		width: 100%;
+	}
+	tr,td {
+		padding: 4px 4%;
+	}
+	td {
+		width: 30%;
+	}
+	table,td {
+		border: 1px solid #CCCCCC;
+	}
+	form {
+		margin-top: 20px;
+	}
+</style>
+
+<div class="row">
+
+<div class="col-md-12">
+
+<div id="thisiswhereirenderonetable">
+	<table class="product-review-table" width="100%" border="1">
+		<tbody><tr class="product-review-tr"><td align="center">
+				<i>Loading....</i>
+		</td></tr></tbody>
+	</table>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-12">
+
+<div id="thisiswhereirenderTwoTableSearchable">
+	<table class="product-review-table">
+		<tbody><tr class="product-review-tr"><td align="center">
+				<i>Loading....</i>
+		</td></tr></tbody>
+	</table>
+</div>
+
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+	
+	var allIngredients = [{"id":"2","name":"Banana","type":"ingredient-a"},{"id":"3","name":"Apple","type":"ingredient-a"},{"id":"5","name":"Mango","type":"ingredient-a"},{"id":"6","name":"Peach","type":"ingredient-a"},{"id":"21","name":"Orange","type":"ingredient-a"},{"id":"23","name":"Grape","type":"ingredient-b"},{"id":"24","name":"berry","type":"ingredient-b"},{"id":"26","name":"Carrot","type":"ingredient-b"},{"id":"27","name":"Pear","type":"ingredient-b"},{"id":"29","name":"Fig","type":"ingredient-b"},{"id":"32","name":"Avocado","type":"ingredient-b"}];
+
+
+	var products = [{"id":"2","name":"Banana","last_modified_by":"Anil"},{"id":"3","name":"Apple","last_modified_by":"Anil"},{"id":"5","name":"Mango","last_modified_by":"You"},{"id":"6","name":"Peach","last_modified_by":"Me"},{"id":"21","name":"Orange","last_modified_by":"Xia"},{"id":"23","name":"Grape","last_modified_by":"Chai"},{"id":"24","name":"berry","last_modified_by":"Die"},{"id":"26","name":"Carrot","last_modified_by":"John"},{"id":"27","name":"Pear","last_modified_by":"Moe"},{"id":"29","name":"Fig","last_modified_by":"Joe"},{"id":"32","name":"Avocado","last_modified_by":"Paul"}];
+
+</script>
+
+
+
+
+<!--  Include these React Js library from other source which get latest libraries  -->
+<script src="https://unpkg.com/react@latest/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+
+<!--  Babel is required to compile In Browser react Js -->
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<!--  My React JS  -->
+<script type="text/babel" src="./my-react-one-table.js"></script>
+<script type="text/babel" src="./my-react-two-table-at-once.js"></script>
+
+</body>
+</html>
